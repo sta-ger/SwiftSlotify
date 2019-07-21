@@ -5,19 +5,19 @@ public class DefaultGameSession: GameSession {
     private var _config: GameSessionConfig
 
     public init(_ config: GameSessionConfig) {
-        _config = config;
-        _bet = getInitialBet();
-        _creditsAmount = _config.creditsAmount;
+        _config = config
+        _bet = getInitialBet()
+        _creditsAmount = _config.creditsAmount
     }
 
     private func getInitialBet() -> UInt {
-        var initialBet: UInt;
+        var initialBet: UInt
         if (isBetAvailable(_config.bet)) {
-            initialBet = _config.bet;
+            initialBet = _config.bet
         } else {
-            initialBet = _config.availableBets[0];
+            initialBet = _config.availableBets[0]
         }
-        return initialBet;
+        return initialBet
     }
 
     public var creditsAmount: UInt {
@@ -34,7 +34,11 @@ public class DefaultGameSession: GameSession {
             return _bet
         }
         set {
-            _bet = newValue
+            if (!isBetAvailable(newValue)) {
+                _bet = _availableBets[0]
+            } else {
+                _bet = newValue
+            }
         }
     }
 
@@ -56,11 +60,13 @@ public class DefaultGameSession: GameSession {
 
     public var canPlayNextGame: Bool {
         get {
-            return _creditsAmount >= bet;
+            return _creditsAmount >= bet
         }
     }
 
     public func play() {
-
+        if (canPlayNextGame) {
+            _creditsAmount -= bet
+        }
     }
 }
