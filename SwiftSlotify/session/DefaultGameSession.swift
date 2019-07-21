@@ -1,6 +1,5 @@
 public class DefaultGameSession: GameSession {
     private var _creditsAmount: UInt = 0
-    private var _availableBets: [UInt] = []
     private var _bet: UInt = 0
     private var _config: GameSessionConfig
 
@@ -35,7 +34,7 @@ public class DefaultGameSession: GameSession {
         }
         set {
             if (!isBetAvailable(newValue)) {
-                _bet = _availableBets[0]
+                _bet = _config.availableBets[0]
             } else {
                 _bet = newValue
             }
