@@ -92,15 +92,17 @@ class DefaultGameSessionTest: XCTestCase  {
 
     public func testCreateNewSessionWithWrongBet() {
         let conf: GameSessionConfig = DefaultGameSessionTest.createCustomConfigForWrongBetTest()
+        var session: GameSession = DefaultGameSession(conf) as! GameSession
         DefaultGameSessionTest.testDefaultSessionWithWrongInitialBet(
-                DefaultGameSession(conf),
+                &session,
                 DefaultGameSessionTest.createCustomConfigForTestProperInitialValues()
         )
     }
 
     public func testPlayWhileEnoughCredits() {
         let conf: GameSessionConfig = DefaultGameSessionConfig()
-        DefaultGameSessionTest.testDefaultSessionPlaysWhileEnoughCredits(DefaultGameSession(conf))
+        var session: GameSession = DefaultGameSession(conf) as! GameSession
+        DefaultGameSessionTest.testDefaultSessionPlaysWhileEnoughCredits(&session)
     }
 
 }
