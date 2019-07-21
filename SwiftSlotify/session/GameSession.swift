@@ -12,4 +12,6 @@ public protocol GameSession {
 
     var canPlayNextGame: Bool { get }
 
+    func play();
+
 }

@@ -7,8 +7,8 @@ class DefaultGameSessionConfigTest: XCTestCase {
     public static let CUSTOM_CREDITS: UInt = 99
 
     public static func testDefaultConfig(_ conf: GameSessionConfig) {
-        XCTAssertEqual(conf.availableBets, DefaultGameSessionConfig.DEFAULT_AVAILABLE_BETS)
-        XCTAssertEqual(conf.creditsAmount, DefaultGameSessionConfig.DEFAULT_CREDITS_AMOUNT)
+        XCTAssertEqual(conf.availableBets, DefaultGameSessionConfig.defaultAvailableBets)
+        XCTAssertEqual(conf.creditsAmount, DefaultGameSessionConfig.defaultCreditsAmount)
         XCTAssertEqual(conf.bet, conf.availableBets[0])
     }
 

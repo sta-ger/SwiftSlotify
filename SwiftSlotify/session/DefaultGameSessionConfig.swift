@@ -1,9 +1,9 @@
 public struct DefaultGameSessionConfig: GameSessionConfig {
-    public static let DEFAULT_AVAILABLE_BETS: [UInt] = [1, 2, 3, 4, 5, 10, 20, 30, 40, 50, 100]
-    public static let DEFAULT_CREDITS_AMOUNT: UInt = 10000
+    public static let defaultAvailableBets: [UInt] = [1, 2, 3, 4, 5, 10, 20, 30, 40, 50, 100]
+    public static let defaultCreditsAmount: UInt = 10000
 
-    private var _availableBets: [UInt] = DEFAULT_AVAILABLE_BETS
-    private var _creditsAmount: UInt = DEFAULT_CREDITS_AMOUNT
+    private var _availableBets: [UInt] = defaultAvailableBets
+    private var _creditsAmount: UInt = defaultCreditsAmount
     private var _bet: UInt = 0
 
     public init() {

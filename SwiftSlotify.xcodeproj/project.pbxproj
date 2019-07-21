@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8ECBB044716B9D6C0E340FCF /* GameSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBB4F0F2700FB65E547DC6 /* GameSession.swift */; };
+		8ECBB103D21BD78D8B860A11 /* DefaultGameSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBB25F10C7B0F23079DFDC /* DefaultGameSession.swift */; };
 		8ECBB40DABE0004060A7E114 /* GameSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBB4F0F2700FB65E547DC6 /* GameSession.swift */; };
+		8ECBB51702BB0FED479DC5DE /* DefaultGameSessoinTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBB373887337695EF48214 /* DefaultGameSessoinTest.swift */; };
+		8ECBBABEE4E1AE126AB11967 /* DefaultGameSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBB25F10C7B0F23079DFDC /* DefaultGameSession.swift */; };
 		8EEBC4E1B2D94D5C082928AD /* DefaultGameSessionConfigTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEBC99E9CDC49FC65319D63 /* DefaultGameSessionConfigTest.swift */; };
 		8EEBC5438FF37C96FDFF8390 /* SwiftSlotify.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EEBC6705A1361D4413A1834 /* SwiftSlotify.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8EEBC6B9AE776AEF716F4BDC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8EEBC881A8C04794D79DD108 /* .gitignore */; };
@@ -28,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8ECBB25F10C7B0F23079DFDC /* DefaultGameSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultGameSession.swift; sourceTree = "<group>"; };
+		8ECBB373887337695EF48214 /* DefaultGameSessoinTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultGameSessoinTest.swift; sourceTree = "<group>"; };
 		8ECBB4F0F2700FB65E547DC6 /* GameSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSession.swift; sourceTree = "<group>"; };
 		8EEBC4FCE6CEDEFAEBFDE16A /* DefaultGameSessionConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultGameSessionConfig.swift; sourceTree = "<group>"; };
 		8EEBC57D1F4CB52A64126EA5 /* SwiftSlotify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftSlotify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +69,7 @@
 			children = (
 				8EEBCE94CA8AABDBC669933B /* Info.plist */,
 				8EEBC99E9CDC49FC65319D63 /* DefaultGameSessionConfigTest.swift */,
+				8ECBB373887337695EF48214 /* DefaultGameSessoinTest.swift */,
 			);
 			path = SwiftSlotifyTests;
 			sourceTree = "<group>";
@@ -83,6 +89,7 @@
 				8EEBC85B0130BB41AD58223B /* GameSessionConfig.swift */,
 				8EEBC4FCE6CEDEFAEBFDE16A /* DefaultGameSessionConfig.swift */,
 				8ECBB4F0F2700FB65E547DC6 /* GameSession.swift */,
+				8ECBB25F10C7B0F23079DFDC /* DefaultGameSession.swift */,
 			);
 			path = session;
 			sourceTree = "<group>";
@@ -211,6 +218,7 @@
 				8EEBCB8662E21A4FC97B8022 /* GameSessionConfig.swift in Sources */,
 				8EEBCDE67D43F83408DC0EA8 /* DefaultGameSessionConfig.swift in Sources */,
 				8ECBB40DABE0004060A7E114 /* GameSession.swift in Sources */,
+				8ECBB103D21BD78D8B860A11 /* DefaultGameSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +228,8 @@
 			files = (
 				8EEBC4E1B2D94D5C082928AD /* DefaultGameSessionConfigTest.swift in Sources */,
 				8ECBB044716B9D6C0E340FCF /* GameSession.swift in Sources */,
+				8ECBBABEE4E1AE126AB11967 /* DefaultGameSession.swift in Sources */,
+				8ECBB51702BB0FED479DC5DE /* DefaultGameSessoinTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
