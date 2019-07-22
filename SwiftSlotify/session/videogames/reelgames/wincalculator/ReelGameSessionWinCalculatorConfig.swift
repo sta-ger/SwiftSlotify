@@ -1,4 +1,4 @@
-public protocol WinCalculator {
+public protocol ReelGameSessionWinCalculatorConfig {
 
     var availableBets: [UInt] { get }
 
