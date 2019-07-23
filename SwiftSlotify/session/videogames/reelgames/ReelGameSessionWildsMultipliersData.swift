@@ -1,5 +1,5 @@
 public protocol ReelGameSessionWildsMultipliersData {
 
-    func getMultiplierValueForWildsNum(wildNum: UInt) -> UInt;
+    func getMultiplierValueForWildsNum(_ wildNum: UInt) -> UInt;
 
 }

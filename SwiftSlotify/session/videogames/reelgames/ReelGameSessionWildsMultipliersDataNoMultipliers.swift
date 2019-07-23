@@ -1,6 +1,6 @@
 public class ReelGameSessionWildsMultipliersDataNoMultipliers: ReelGameSessionWildsMultipliersData {
 
-    public func getMultiplierValueForWildsNum(wildNum: UInt) -> UInt {
+    public func getMultiplierValueForWildsNum(_ wildNum: UInt) -> UInt {
         return 1;
     }
 

@@ -1,5 +1,6 @@
 public class DefaultReelGameSessionConfig: ReelGameSessionConfig {
-    public var availableBets: [UInt]
+    public var availableBets: [UInt] = []
+
     public var creditsAmount: UInt = 0
     public var bet: UInt = 0
     public var paytable: ReelGameSessionPaytableData
@@ -11,6 +12,9 @@ public class DefaultReelGameSessionConfig: ReelGameSessionConfig {
     public var wildsMultipliers: ReelGameSessionWildsMultipliersData
 
     public init() {
+        paytable = DefaultReelGameSessionPaytableData(Dictionary<UInt, Dictionary<String, Dictionary<UInt, UInt>>>())
+        linesDirections = DefaultReelGameSessionLinesDirectionData(Dictionary<UInt, [UInt]>())
+        wildsMultipliers = ReelGameSessionWildsMultipliersDataPowerOfTwo()
     }
 
     public func isItemWild(itemId: String) -> Bool {

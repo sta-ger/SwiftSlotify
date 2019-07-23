@@ -1,6 +1,6 @@
 public protocol ReelGameSessionWinCalculatorConfig {
 
-    var availableBets: [UInt] { get }
+    var availableBets: [UInt] { get set }
 
     var paytable: ReelGameSessionPaytableData { get set }
 

@@ -6,15 +6,14 @@ class DefaultReelGameSessionWinCalculatorTest: XCTestCase {
 
     private func testWinning(bet: UInt, lines: Dictionary<UInt, ReelGameSessionWinningLineModel>) {
         lines.forEach({
-            let lineId: UInt = $0
             let line: ReelGameSessionWinningLineModel = $1
-            let lineWin: UInt = _config.getPaytable().getWinningAmountForItem(
-                    line.getItemId(),
-                    line.getItemsPositions().length,
+            let lineWin: UInt = _config.paytable.getWinningAmountForItem(
+                    line.itemId,
+                    UInt(line.itemsPositions.count),
                     bet
             )
-            let wildMlt: UInt = _config.getWildsMultipliers().getMultiplierValueForWildsNum(
-                    line.getWildItemsPositions().length
+            let wildMlt: UInt = _config.wildsMultipliers.getMultiplierValueForWildsNum(
+                    UInt(line.wildItemsPositions.count)
             )
             XCTAssertEqual(line.winningAmount, lineWin * wildMlt)
         })

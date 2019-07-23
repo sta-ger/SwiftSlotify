@@ -5,7 +5,7 @@ public class DefaultReelGameSessionPaytableData: ReelGameSessionPaytableData {
         _paytableDictionary = paytableDictionary
     }
 
-    public func getWinningAmountForItem(itemId: String, numberOfItems: UInt, bet: UInt) -> UInt {
+    public func getWinningAmountForItem(_ itemId: String, _ numberOfItems: UInt, _ bet: UInt) -> UInt {
         var rv: UInt = 0
         if (
                    _paytableDictionary[bet] != nil &&

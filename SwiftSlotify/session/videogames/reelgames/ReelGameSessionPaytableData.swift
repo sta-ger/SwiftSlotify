@@ -1,5 +1,5 @@
 public protocol ReelGameSessionPaytableData {
 
-    func getWinningAmountForItem(itemId: String, numberOfItems: UInt, bet: UInt) -> UInt
+    func getWinningAmountForItem(_ itemId: String, _ numberOfItems: UInt, _ bet: UInt) -> UInt
 
 }
