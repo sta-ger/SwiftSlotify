@@ -23,7 +23,9 @@
 		8EEBC1706B7874B0B2DBD871 /* DefaultReelGameSessionScatterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEBC261BCEFB127C096F826 /* DefaultReelGameSessionScatterData.swift */; };
 		8EEBC2142C4E95997EB0F918 /* DefaultReelGameSessionLinesDirectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEBC1933D87D32E0AD9AB58 /* DefaultReelGameSessionLinesDirectionData.swift */; };
 		8EEBC4E1B2D94D5C082928AD /* DefaultGameSessionConfigTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEBC99E9CDC49FC65319D63 /* DefaultGameSessionConfigTest.swift */; };
+		8EEBC541343DAD576C9914E1 /* DefaultReelGameSessionConfigTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEBCB98EBB98761C925AC9D /* DefaultReelGameSessionConfigTest.swift */; };
 		8EEBC5438FF37C96FDFF8390 /* SwiftSlotify.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EEBC6705A1361D4413A1834 /* SwiftSlotify.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EEBC5D8450DEAB170A777CA /* ReelGameSessionReelsControllerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEBCFD23B6A5753500F3E7B /* ReelGameSessionReelsControllerConfig.swift */; };
 		8EEBC6B9AE776AEF716F4BDC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8EEBC881A8C04794D79DD108 /* .gitignore */; };
 		8EEBC72B5B53B6ABBE2CC7F6 /* ReelGameSessionWildsMultipliersDataPowerOfTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEBC11F5D611E0A92942356 /* ReelGameSessionWildsMultipliersDataPowerOfTwo.swift */; };
 		8EEBCB8662E21A4FC97B8022 /* GameSessionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEBC85B0130BB41AD58223B /* GameSessionConfig.swift */; };
@@ -66,9 +68,11 @@
 		8EEBC8809EF2F7BADCB38E8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		8EEBC881A8C04794D79DD108 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 		8EEBC99E9CDC49FC65319D63 /* DefaultGameSessionConfigTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultGameSessionConfigTest.swift; sourceTree = "<group>"; };
+		8EEBCB98EBB98761C925AC9D /* DefaultReelGameSessionConfigTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultReelGameSessionConfigTest.swift; sourceTree = "<group>"; };
 		8EEBCD4628F9C12F8B52F535 /* ReelGameSessionWildsMultipliersDataNoMultipliers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReelGameSessionWildsMultipliersDataNoMultipliers.swift; sourceTree = "<group>"; };
 		8EEBCE94CA8AABDBC669933B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		8EEBCF8E31441C1C59C6857B /* SwiftSlotifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSlotifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EEBCFD23B6A5753500F3E7B /* ReelGameSessionReelsControllerConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReelGameSessionReelsControllerConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				8ECBBA5D3420C54F8A1AEC64 /* wincalculator */,
+				8EEBCB98EBB98761C925AC9D /* DefaultReelGameSessionConfigTest.swift */,
 			);
 			path = reelgames;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 				8ECBBF50C492A3F6D3ADC24E /* ReelGameSessionWinningLineModel.swift */,
 				8ECBB35DAC89E2B1E78D99D9 /* ReelGameSessionConfig.swift */,
 				8ECBBFAF770865B0EEBABEB1 /* DefaultReelGameSessionConfig.swift */,
+				8EEBC5066C53F05314D70FAE /* reelscontroller */,
 			);
 			path = reelgames;
 			sourceTree = "<group>";
@@ -168,6 +174,14 @@
 				8EEBCF8E31441C1C59C6857B /* SwiftSlotifyTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8EEBC5066C53F05314D70FAE /* reelscontroller */ = {
+			isa = PBXGroup;
+			children = (
+				8EEBCFD23B6A5753500F3E7B /* ReelGameSessionReelsControllerConfig.swift */,
+			);
+			path = reelscontroller;
 			sourceTree = "<group>";
 		};
 		8EEBC50A84F12A30B08D4694 /* session */ = {
@@ -320,6 +334,7 @@
 				8ECBB8CE2BF7EDA91E523A24 /* ReelGameSessionWinningLineModel.swift in Sources */,
 				8ECBBF169658FEBA83BB086B /* ReelGameSessionConfig.swift in Sources */,
 				8ECBBE0EAC2297E63576B281 /* DefaultReelGameSessionConfig.swift in Sources */,
+				8EEBC5D8450DEAB170A777CA /* ReelGameSessionReelsControllerConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +345,7 @@
 				8EEBC4E1B2D94D5C082928AD /* DefaultGameSessionConfigTest.swift in Sources */,
 				8ECBB51702BB0FED479DC5DE /* DefaultGameSessoinTest.swift in Sources */,
 				8ECBB81682923E539A8C1D5C /* DefaultReelGameSessionWinCalculatorTest.swift in Sources */,
+				8EEBC541343DAD576C9914E1 /* DefaultReelGameSessionConfigTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,6 +1,6 @@
 public protocol ReelGameSessionLinesDirectionData {
 
-    func getVerticalItemsPositionsForLineId(lineId: UInt) -> [UInt]
+    func getVerticalItemsPositionsForLineId(_ lineId: UInt) -> [UInt]
 
     func getLinesIds() -> [UInt]
 

@@ -1,4 +1,4 @@
-public protocol ReelGameSessionConfig: GameSessionConfig, ReelGameSessionWinCalculatorConfig {
+public protocol ReelGameSessionConfig: GameSessionConfig, ReelGameSessionReelsControllerConfig, ReelGameSessionWinCalculatorConfig {
 
     func isItemWild(itemId: String) -> Bool;
 

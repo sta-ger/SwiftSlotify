@@ -5,7 +5,7 @@ public class DefaultReelGameSessionLinesDirectionData: ReelGameSessionLinesDirec
         _linesDirectionsMap = linesDirectionsMap
     }
 
-    public func getVerticalItemsPositionsForLineId(lineId: UInt) -> [UInt] {
+    public func getVerticalItemsPositionsForLineId(_ lineId: UInt) -> [UInt] {
         return _linesDirectionsMap[lineId]!;
     }
 

@@ -1,6 +1,8 @@
 public class DefaultReelGameSessionConfig: ReelGameSessionConfig {
-    public var availableBets: [UInt] = []
+    public static let defaultWildItemId: String = "W"
+    public static let defaultScatterItemId: String = "S"
 
+    public var availableBets: [UInt] = []
     public var creditsAmount: UInt = 0
     public var bet: UInt = 0
     public var paytable: ReelGameSessionPaytableData
@@ -10,6 +12,8 @@ public class DefaultReelGameSessionConfig: ReelGameSessionConfig {
     public var reelsItemsNumber: UInt = 0
     public var linesDirections: ReelGameSessionLinesDirectionData
     public var wildsMultipliers: ReelGameSessionWildsMultipliersData
+    public var availableItems: [String] = []
+    public var reelsItemsSequences: [[String]] = []
 
     public init() {
         paytable = DefaultReelGameSessionPaytableData(Dictionary<UInt, Dictionary<String, Dictionary<UInt, UInt>>>())
@@ -24,4 +28,5 @@ public class DefaultReelGameSessionConfig: ReelGameSessionConfig {
     public func isItemScatter(itemId: String) -> Bool {
         fatalError("isItemScatter(itemId:) has not been implemented")
     }
+
 }
