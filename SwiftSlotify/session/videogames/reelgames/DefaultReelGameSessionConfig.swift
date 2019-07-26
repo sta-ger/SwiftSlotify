@@ -21,11 +21,11 @@ public class DefaultReelGameSessionConfig: ReelGameSessionConfig {
         wildsMultipliers = ReelGameSessionWildsMultipliersDataPowerOfTwo()
     }
 
-    public func isItemWild(itemId: String) -> Bool {
+    public func isItemWild(_ itemId: String) -> Bool {
         fatalError("isItemWild(itemId:) has not been implemented")
     }
 
-    public func isItemScatter(itemId: String) -> Bool {
+    public func isItemScatter(_ itemId: String) -> Bool {
         fatalError("isItemScatter(itemId:) has not been implemented")
     }
 

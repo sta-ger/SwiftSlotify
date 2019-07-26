@@ -73,4 +73,16 @@ public class DefaultReelGameSessionConfigTest: XCTestCase {
         }
     }
 
+    public func testIsItemWild() {
+        let conf: ReelGameSessionConfig = DefaultReelGameSessionConfig()
+        XCTAssertTrue(conf.isItemWild(DefaultReelGameSessionConfig.defaultWildItemId))
+        XCTAssertFalse(conf.isItemWild("A"))
+    }
+
+    public func testIsItemScatter() {
+        let conf: ReelGameSessionConfig = DefaultReelGameSessionConfig()
+        XCTAssertTrue(conf.isItemScatter(DefaultReelGameSessionConfig.defaultScatterItemId))
+        XCTAssertFalse(conf.isItemScatter("A"))
+    }
+
 }

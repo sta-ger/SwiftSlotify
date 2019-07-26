@@ -1,7 +1,7 @@
 public protocol ReelGameSessionConfig: GameSessionConfig, ReelGameSessionReelsControllerConfig, ReelGameSessionWinCalculatorConfig {
 
-    func isItemWild(itemId: String) -> Bool;
+    func isItemWild(_ itemId: String) -> Bool;
 
-    func isItemScatter(itemId: String) -> Bool;
+    func isItemScatter(_ itemId: String) -> Bool;
 
 }
