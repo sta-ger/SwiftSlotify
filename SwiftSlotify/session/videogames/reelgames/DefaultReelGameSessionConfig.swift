@@ -2,31 +2,47 @@ public class DefaultReelGameSessionConfig: ReelGameSessionConfig {
     public static let defaultWildItemId: String = "W"
     public static let defaultScatterItemId: String = "S"
 
-    public var availableBets: [UInt] = []
-    public var creditsAmount: UInt = 0
-    public var bet: UInt = 0
-    public var paytable: ReelGameSessionPaytableData
-    public var wildItemId: String = ""
-    public var scattersData: [ReelGameSessionScatterData] = []
-    public var reelsNumber: UInt = 0
-    public var reelsItemsNumber: UInt = 0
-    public var linesDirections: ReelGameSessionLinesDirectionData
-    public var wildsMultipliers: ReelGameSessionWildsMultipliersData
-    public var availableItems: [String] = []
-    public var reelsItemsSequences: [[String]] = []
+    public static let defaultMinimumItemsNumForScatterWin: UInt = 3
+    public static let defaultReelsNumber: UInt = 5
+    public static let defaultReelsItemsNumber: UInt = 3
+
+    public static let defaultAvailableItems: [String] = [
+        "A",
+        "K",
+        "Q",
+        "J",
+        "10",
+        "9",
+        "W",
+        "S"
+    ]
+
+    private var _wildItemId: String = DefaultReelGameSessionConfig.defaultWildItemId
+    private var _reelsNumber: UInt = DefaultReelGameSessionConfig.defaultReelsNumber
+    private var _reelsItemsNumber: UInt = DefaultReelGameSessionConfig.defaultReelsItemsNumber
+    private var _availableItems: [String] = DefaultReelGameSessionConfig.defaultAvailableItems
+
+    private let _baseConfig: DefaultGameSessionConfig = DefaultGameSessionConfig()
+
+    private var _paytable: ReelGameSessionPaytableData
+    private var _scattersData: [ReelGameSessionScatterData]
+    private var _linesDirections: ReelGameSessionLinesDirectionData
+    private var _wildsMultipliers: ReelGameSessionWildsMultipliersData
+    private var _reelsItemsSequences: [[String]] = []
 
     public init() {
-        paytable = DefaultReelGameSessionPaytableData(Dictionary<UInt, Dictionary<String, Dictionary<UInt, UInt>>>())
-        linesDirections = DefaultReelGameSessionLinesDirectionData(Dictionary<UInt, [UInt]>())
-        wildsMultipliers = ReelGameSessionWildsMultipliersDataPowerOfTwo()
+
     }
 
     public func isItemWild(_ itemId: String) -> Bool {
-        fatalError("isItemWild(itemId:) has not been implemented")
+        return itemId == _wildItemId
     }
 
     public func isItemScatter(_ itemId: String) -> Bool {
-        fatalError("isItemScatter(itemId:) has not been implemented")
+        return _scattersData.contains {
+            $0.itemId == itemId
+        }
+
     }
 
 }
