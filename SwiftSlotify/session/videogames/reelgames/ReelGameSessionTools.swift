@@ -14,9 +14,12 @@ public struct ReelGameSessionTools {
         var r: [[String]] = [[String]]()
         for i in 0..<reelsNumber {
             let seq: [String] = availableItems
-                    .reduce("", (a, b) -> a.concat(String.join(",", availableItems) + ","))
-                    .split(",")
-            Collections.shuffle(Arrays.asList(seq))
+                    .reduce("", { a, b in
+                        a + availableItems.joined(separator: ",") + ","
+                    })
+                    .split(separator: ",")
+                    .shuffle()
+
             r[i] = seq
         }
         return r
