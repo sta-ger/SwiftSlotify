@@ -12,15 +12,14 @@ public struct ReelGameSessionTools {
 
     public static func createReelsItemsSequences(reelsNumber: UInt, availableItems: [String]) -> [[String]] {
         var r: [[String]] = [[String]]()
-        for i in 0..<reelsNumber {
-            let seq: [String] = availableItems
-                    .reduce("", { a, b in
-                        a + availableItems.joined(separator: ",") + ","
-                    })
-                    .split(separator: ",")
-                    .shuffle()
+        for _ in 0..<reelsNumber {
+            let str: String = availableItems.reduce("", { a, b in
+                a + availableItems.joined(separator: ",") + ","
+            })
+            var arr: [String] = str.components(separatedBy: ",")
+            arr.shuffle()
 
-            r[i] = seq
+            r.append(arr)
         }
         return r
     }
