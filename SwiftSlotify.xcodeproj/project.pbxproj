@@ -14,6 +14,7 @@
 		8ECBB506E4469059D17F0712 /* ReelGameSessionLinesDirectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBBCCD647280469E19AABA /* ReelGameSessionLinesDirectionData.swift */; };
 		8ECBB51702BB0FED479DC5DE /* DefaultGameSessoinTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBB373887337695EF48214 /* DefaultGameSessoinTest.swift */; };
 		8ECBB81682923E539A8C1D5C /* DefaultReelGameSessionWinCalculatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBB99262B0B6FD12335908 /* DefaultReelGameSessionWinCalculatorTest.swift */; };
+		8ECBB85835DFCA3A5A84E260 /* ReelGameSessionToolsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBB3D8952D7AD4C5223B93 /* ReelGameSessionToolsTest.swift */; };
 		8ECBB8CE2BF7EDA91E523A24 /* ReelGameSessionWinningLineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBBF50C492A3F6D3ADC24E /* ReelGameSessionWinningLineModel.swift */; };
 		8ECBBBE13F978C76CD7765F6 /* DefaultGameSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBBA649A63DC39DB71CCEC /* DefaultGameSession.swift */; };
 		8ECBBBF464E986EA8895BCAF /* ReelGameSessionTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBB6755221D760BE98FE1B /* ReelGameSessionTools.swift */; };
@@ -49,6 +50,7 @@
 		8ECBB33AD2B7CFD50C7D4C0F /* ReelGameSessionScatterData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReelGameSessionScatterData.swift; sourceTree = "<group>"; };
 		8ECBB35DAC89E2B1E78D99D9 /* ReelGameSessionConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReelGameSessionConfig.swift; sourceTree = "<group>"; };
 		8ECBB373887337695EF48214 /* DefaultGameSessoinTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultGameSessoinTest.swift; sourceTree = "<group>"; };
+		8ECBB3D8952D7AD4C5223B93 /* ReelGameSessionToolsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReelGameSessionToolsTest.swift; sourceTree = "<group>"; };
 		8ECBB5462BCE76F7CA85F4BB /* ReelGameSessionPaytableData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReelGameSessionPaytableData.swift; sourceTree = "<group>"; };
 		8ECBB6755221D760BE98FE1B /* ReelGameSessionTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReelGameSessionTools.swift; sourceTree = "<group>"; };
 		8ECBB687AD779B7C83E3B967 /* ReelGameSessionWildsMultipliersData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReelGameSessionWildsMultipliersData.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			children = (
 				8ECBBA5D3420C54F8A1AEC64 /* wincalculator */,
 				8EEBCB98EBB98761C925AC9D /* DefaultReelGameSessionConfigTest.swift */,
+				8ECBB3D8952D7AD4C5223B93 /* ReelGameSessionToolsTest.swift */,
 			);
 			path = reelgames;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				8ECBB51702BB0FED479DC5DE /* DefaultGameSessoinTest.swift in Sources */,
 				8ECBB81682923E539A8C1D5C /* DefaultReelGameSessionWinCalculatorTest.swift in Sources */,
 				8EEBC541343DAD576C9914E1 /* DefaultReelGameSessionConfigTest.swift in Sources */,
+				8ECBB85835DFCA3A5A84E260 /* ReelGameSessionToolsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
