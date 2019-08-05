@@ -4,7 +4,10 @@ public struct ReelGameSessionTools {
         var r: [[String]] = [[String]]()
         for i in 0..<source.count {
             for j in 0..<source[0].count {
-                r[j][i] = source[i][j]
+                if (!r.indices.contains(j)) {
+                    r.append([])
+                }
+                r[j].append(source[i][j])
             }
         }
         return r
