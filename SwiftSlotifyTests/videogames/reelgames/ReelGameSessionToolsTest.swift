@@ -15,4 +15,21 @@ public class ReelGameSessionToolsTest: XCTestCase {
         ])
     }
 
+    public func testCreateReelsItemsSequences() {
+        let availableItems = [
+            "A",
+            "K",
+            "Q",
+            "J",
+            "10",
+            "9",
+        ]
+        let sequences = ReelGameSessionTools.createReelsItemsSequences(reelsNumber: 5, availableItems: availableItems)
+        XCTAssertEqual(sequences.count, 5)
+        /*Stream.of(conf.getReelsItemsSequences()).forEach(seq -> Stream.of(conf.getAvailableItems()).forEach(item ->
+                //Check if every of available items exists on each sequence
+                assertTrue(Arrays.asList(seq).contains(item))
+        ));*/
+    }
+
 }
