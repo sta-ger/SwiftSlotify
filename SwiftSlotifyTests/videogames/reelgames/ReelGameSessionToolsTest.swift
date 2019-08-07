@@ -26,10 +26,14 @@ public class ReelGameSessionToolsTest: XCTestCase {
         ]
         let sequences = ReelGameSessionTools.createReelsItemsSequences(reelsNumber: 5, availableItems: availableItems)
         XCTAssertEqual(sequences.count, 5)
-        /*Stream.of(conf.getReelsItemsSequences()).forEach(seq -> Stream.of(conf.getAvailableItems()).forEach(item ->
-                //Check if every of available items exists on each sequence
-                assertTrue(Arrays.asList(seq).contains(item))
-        ));*/
+
+        sequences.forEach {
+            let seq = $0
+            availableItems.forEach {
+                let item = $0
+                XCTAssertTrue(seq.contains(item))
+            }
+        }
     }
 
 }
