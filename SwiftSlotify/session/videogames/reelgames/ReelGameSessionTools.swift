@@ -27,4 +27,16 @@ public struct ReelGameSessionTools {
         return r
     }
 
+    public static func createItemsSequence(availableItems: [String], numberOfItems: UInt) -> [String] {
+        var rv: [String] = [String]()
+        availableItems.forEach {
+            let itemId: String = $0
+            for _ in 0..<numberOfItems {
+                rv.append(itemId)
+            }
+        }
+        rv.shuffle()
+        return rv
+    }
+
 }
