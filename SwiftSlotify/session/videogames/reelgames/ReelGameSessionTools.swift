@@ -60,4 +60,17 @@ public struct ReelGameSessionTools {
         return rv
     }
 
+    public static func createItemsSequences(reelsNumber: UInt, availableItems: [String]) -> [[String]] {
+        return createItemsSequences(reelsNumber: reelsNumber, availableItems: availableItems, numberOfEachItemOnEachReel: 1)
+    }
+
+    public static func createItemsSequences(reelsNumber: UInt, availableItems: [String], numberOfEachItemOnEachReel: UInt) -> [[String]] {
+        var r: [[String]]
+        r = [[String]]()
+        for reelId in 0..<reelsNumber {
+            r[reelId] = createItemsSequence(availableItems: availableItems, numberOfEachItemOnEachReel: numberOfEachItemOnEachReel)
+        }
+        return r
+    }
+
 }
